@@ -20,6 +20,14 @@ interface velocityOptions {
     colorScale: Array<string>,       // define your own array of hex/rgb colors
     onAdd: Function,          // callback function
     onRemove: Function,       // callback function
+
+    /**
+     *
+     * 是否为真气网的数据源
+     * @type {boolean}
+     * @memberof velocityOptions
+     */
+    isZqSource: boolean
 }
 
 export function velocityLayer(options: velocityOptions): L.Layer;
