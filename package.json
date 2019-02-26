@@ -1,6 +1,6 @@
 {
   "name": "leaflet-velocity-ts-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "module": "dist/bundle.es.js",
   "main": "dist/bundle.cjs.js",
