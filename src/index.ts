@@ -1,12 +1,11 @@
-import CanvasBound from "./canvasBound";
-import MapBound from "./mapBound";
-import Windy from "./windy";
 import CanvasLayer from "./L.CanvasLayer";
 import VelocityLayer from "./L.VelocityLayer";
 
-(<any>window).CanvasBound = CanvasBound;
-(<any>window).MapBound = MapBound;
-(<any>window).Windy = Windy;
+export { default as CanvasBound } from "./canvasBound";
+export { default as MapBound } from "./mapBound";
+export { default as Windy } from "./windy";
+export { default as Layer } from "./layer";
+
 
 const L = (<any>window).L;
 
