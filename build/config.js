@@ -2,7 +2,7 @@ const path = require('path')
 const typescript = require('rollup-plugin-typescript')
 
 function configFactory (opt) {
-    return {
+    let options = {
         input: path.resolve(__dirname, '../src/index.ts'),
         plugins: [
             typescript()
@@ -15,6 +15,11 @@ function configFactory (opt) {
             file: path.resolve(__dirname, `../dist/bundle.${opt.format}.js`)
         }
     }
+    if(opt.format === 'umd') {
+        options.output.name = opt.name
+    }
+    
+    return options
 }
 
 const opts = [
@@ -22,6 +27,10 @@ const opts = [
         format: 'cjs'
     }, {
         format: 'es'
+    },
+    {
+        format: 'umd',
+        name: 'velocityLayer'
     }
 ]
 
