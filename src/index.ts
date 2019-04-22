@@ -14,7 +14,6 @@ L.CanvasLayer = (L.Layer ? L.Layer : L.Class).extend(new CanvasLayer());
 L.canvasLayer = function () {
 	return new L.CanvasLayer();
 };
-
 L.VelocityLayer = (L.Layer ? L.Layer : L.Class).extend(new VelocityLayer());
 
 export const velocityLayer = function (options: any) {
@@ -22,4 +21,3 @@ export const velocityLayer = function (options: any) {
 };
 
 L.velocityLayer = velocityLayer
-
