@@ -20,11 +20,9 @@ options: {
 velocityLayer.velocityLayer(options)
 ```
 
-PS：
-
-1. Windy 会以全局变量的方式挂载到 window 下面（后续版本将改为模块形式）
+也就是说 umd 模式下面，模块中的变量会挂在`velocityLayer`这一变量下面
 
 ## TODO
 
 - [ ] 完善本地调试过程，使用 hot reload 的方式更新
-- [ ] 统一插件出口，禁止使用 window 全局变量的形式调用
+- [x] 统一插件出口，禁止使用 window 全局变量的形式调用
